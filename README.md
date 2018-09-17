@@ -1,7 +1,24 @@
-# Gambler-Problem-RL
+# Sports Betting with RL
 
-This repositiry contains implementation of Gambler Problem as discussed in Example 4.3 in Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto.
-The problem from the book is described below:
+
+## Overview
+
+This is the code for [this](https://youtu.be/mEIePvxdbkQ) video on Youtube by Siraj Raval on Sports Betting using Reinforcement Learning. This is apart of the Move 37 course at the [School of AI](http://www.theschool.ai).
+
+## Dependencies
+
+None.
+
+## Usage
+
+Type python value_iteration.py into terminal and it will run.
+
+## History
+
+This is an adapted version of the "Gambler's Problem" that I've applied to sports betting. Details below
+
+-The Gambler Problem as discussed in Example 4.3 in Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto.
+-The problem from the book is described below:
 
 **Gambler’s Problem**: A gambler has the opportunity to make bets
 on the outcomes of a sequence of coin flips. If the coin comes up heads, he wins as
