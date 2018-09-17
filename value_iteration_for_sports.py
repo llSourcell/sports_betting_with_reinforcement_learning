@@ -28,7 +28,7 @@ def reinforcement_learning():
             bellmanequation(i)
             diff = abs(oldvalue-value[i])
             delta = max(delta,diff)
-    print value
+    print(value)
 
 def bellmanequation(num):
     "Initialize optimal value to be zero"
@@ -41,10 +41,12 @@ def bellmanequation(num):
         loss = num - bet
         "calculate the average of possible states for an action"
         "In this case it would be home team winning or away team winning"
-        sum = p * (reward[win] + gamma * value[win]) + (1 - probhead) * (reward[loss] + gamma * value[loss])
+        sum = p * (reward[win] + gamma * value[win]) + (1 - p) * (reward[loss] + gamma * value[loss])
 
         "Choose the action that gives the max reward and update the policy and value for that"
         if sum > optimalvalue:
             optimalvalue = sum
             value[num] = sum
             policy[num] = bet
+            
+reinforcement_learning() 
